@@ -37,7 +37,7 @@ img{
     display: flex;
     flex-direction: row;
     margin-right: 5px;
-    margin-top: 100px;
+    margin-top: 130px;
 }
 
 
@@ -52,8 +52,9 @@ img{
     
 
 }
-body{
-    back
+.socials{
+    margin-left: 800px;
+    margin-top: 100px;
 }
 
 
