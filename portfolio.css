@@ -3,6 +3,8 @@ nav{
     flex-direction: row;
     align-content: space-between;
     margin-left: 600px;
+    font-size: 20px;
+
 }
 
 .rightbars{
@@ -13,14 +15,19 @@ nav{
 
 }
 img{
-    border-radius: 5px;
+    border-radius: 50%;
 }
 
-.Bodytext{
+#Bodytext{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 100px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    
 }
 
 .Animeflowers1{
@@ -37,7 +44,7 @@ img{
     display: flex;
     flex-direction: row;
     margin-right: 5px;
-    margin-top: 130px;
+    margin-top: 170px;
 }
 
 
@@ -47,7 +54,8 @@ img{
     border: 1px lightblue;
     border-radius:20% ;
     background-image: repeating-radial-gradient(farthest-corner at 70px 70px, rgb(66, 0, 128) 30%, white 60%);
-    margin-left: 150px;
+    margin-left: 100px;
+    margin-top: 2px;
 
     
 
@@ -56,5 +64,22 @@ img{
     margin-left: 800px;
     margin-top: 100px;
 }
+
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* to prevent scrollbars */
+}
+
+
+.background-animation{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(rgb(169, 125, 211) 10%, wheat 90%);
+}
+  
+  
 
 
