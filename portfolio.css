@@ -402,7 +402,7 @@ body.dark .home .text{
 
 .animebox div:nth-child(12) {
     top:80%;
-    left: 90%;
+    left: 85%;
     animation: animate 9s linear infinite;
 
 }
@@ -423,7 +423,7 @@ body.dark .home .text{
 
 .animebox div:nth-child(15) {
     top:10%;
-    left: 90%;
+    left: 85%;
     animation: animate 12s linear infinite;
 
 }
