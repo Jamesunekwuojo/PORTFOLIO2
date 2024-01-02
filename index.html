@@ -1,82 +1,128 @@
 <!DOCTYPE html>
+  <!-- Coding by James@unekwuojo | -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James Portfolio</title>
-    <link rel="stylesheet" href="./portfolio.css">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Jamesportfolio</title>
 </head>
 <body>
-    <div class="background">
-        <div class="animebox">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <!--<img src="logo.png" alt="">-->
+                </span>
 
-        <div class="HeadR">
-        
-
-        
-            <div class="rightbars">
-                <div class="nameLogo">
-                    <a href="./index.html"><img src="./Your paragraph text.png" alt="" width="100px"></a>
+                <div class="text logo-text">
+                    <span class="name">Jameslab</span>
+                    <span class="profession">MEAN Stack Dev</span>
+                    <span>in Making.</span>
                 </div>
-                <div class="navdiv">
-                    <nav>
-                        <a class="noUnderline" href="./index.html"><ul>Home</ul></a>
-                        <a class="noUnderline" href=""><ul>About</ul></a>
-                        <a class="noUnderline" href=""><ul>Projects</ul></a>
-                        <a class="noUnderline" href=""><ul>Blogs</ul></a>
-                    </nav>
-
-                </div>
-    
-                
-
             </div>
-    
-        </div> 
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-user icon'></i>
+                            <span class="text nav-text">About</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-code icon'></i>
+                            <span class="text nav-text">Projects</span>
+
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-message-alt-detail icon'></i>
+                            <span class="text nav-text">Message</span>
+                        </a>
+                    </li>
+
+                   
+                </ul>
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="text"> Welcome Friends!</div>
+
+        <div class="background">
+            <div class="animebox">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
         <div class="textcontainer">
             <div id="Bodytext">
             </div>
 
         </div>
-        
-            <div class="socials">
-                <div id="socialtext">
-                    <p>Contact me @</p>
-                </div>
-                
+    </section>
 
-                <div class="mainsocials">
-                    <a class="socials" href="https://web.facebook.com/james.unekwuemmanuel/" target="_blank"><ion-icon size="large" name="logo-facebook"></ion-icon></a>
-                   <a class="socials" href="https://www.linkedin.com/in/unekwuojo-james-b2511225b/" target="_blank"><ion-icon size="large"  name="logo-linkedin"></ion-icon></a>
+    <script src="./test.js"></script>
 
-                   <a class="socials" href="https://github.com/Jamesunekwuojo" target="_blank"><ion-icon name="logo-github"  size="large"></ion-icon></a>
-        
-
-                </div>
-                
-            </div>
-    
-    </div>
+   
 
 
-    
 
-    
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-<script src="./portfolio.js"></script>
 </body>
 </html>
