@@ -309,12 +309,10 @@ body.dark .home .text{
     color: var(--text-color);
 }
 
-.textcontainer{
+#Homediv{
     margin-left: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: var(--text-color);
+ 
 }
 
 .animebox div {
@@ -439,3 +437,55 @@ body.dark .home .text{
 
     }
 }
+
+#Bodytext{
+    font-size: 20px;
+    max-width: 40vw;
+}
+
+#About{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:  rgb(135, 56, 209);
+    
+}
+#textdiv{
+margin-left: 2rem;
+color: var(--text-color);
+max-width: 50vw;
+
+}
+
+#Projectsdiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    
+    
+}
+
+.Elementary_p{
+    width: 25rem;
+    height: 20rem;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+}
+#Elementary{
+    display: flex;
+    flex-direction: row;
+    max-width: 40vw;
+
+}
+
+.Intermediate_P{
+
+}
+
+
+
+
+

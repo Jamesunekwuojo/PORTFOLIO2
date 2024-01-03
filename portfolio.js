@@ -26,7 +26,7 @@ modeSwitch.addEventListener("click" , () =>{
 });
 
 const textElement = document.getElementById('Bodytext');
-const textToType = "Hi,  I'm James Unekwuojo Emmanuel. A fullstack developer in making. "; // Text to be typed
+const textToType = ' "I aspire to engineer solutions that transcend mere functionality, addressing complex challenges and elegantly solving problems with purposeful innovation" '; // Text to be typed
 let index = 0;
 
 function typeWriter() {
