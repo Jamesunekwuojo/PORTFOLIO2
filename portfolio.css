@@ -502,6 +502,7 @@ h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
     
 }
 
@@ -511,7 +512,9 @@ h3{
     align-items: center;
 }
 
-
+.dropdown:hover #projectsDropdown .Projects_dropdown {
+    display: block;
+}
 
 
 
