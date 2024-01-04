@@ -476,6 +476,7 @@ max-width: 50vw;
     display: flex;
     flex-direction: row;
     margin: 1rem;
+    border-radius: 10px;
 }
 #Elementary, #Intermediate{
     display: flex;
@@ -486,7 +487,28 @@ max-width: 50vw;
 }
 
 h3{
-     color:  rgb(135, 56, 209);;
+     color:  rgb(135, 56, 209);
+}
+
+.Blog_bix{
+    width: 40rem;
+    height: 5rem;
+    border: 1px solid black;
+    margin: 1rem;
+}
+
+#Blogsdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#Blogtext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
