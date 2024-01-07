@@ -312,8 +312,31 @@ body.dark .home .text{
 #Homediv{
     margin-left: 4rem;
     color: var(--text-color);
+    display: flex;
+    flex-direction: row;
  
 }
+img{
+    border-radius: 50%;
+
+}
+#Imgdiv{
+   
+    width: 250px; /* Set a fixed width */
+    position: sticky; /* Fix its position */
+    top: 50px; /* Adjust the top position as needed */
+    left: 65vw; /* Adjust the left position as needed */
+    z-index: 999; /* Set a higher z-index to ensure it's above other elements */
+    
+}
+
+#Bodytext{
+    font-size: 20px;
+    max-width: 40vw;
+    height: 250px;
+    
+}
+
 
 .animebox div {
     position: absolute;
@@ -438,10 +461,7 @@ body.dark .home .text{
     }
 }
 
-#Bodytext{
-    font-size: 20px;
-    max-width: 40vw;
-}
+
 
 #About{
     display:flex;
@@ -472,7 +492,8 @@ max-width: 50vw;
 .Elementary_p, .Intermediate_p{
     width: 25rem;
     height: 400px;
-    border: 1px solid black;
+    border: 1px solid ;
+    border-color: var(--text-color);
     display: flex;
     flex-direction: row;
     margin: 1rem;
@@ -493,8 +514,9 @@ h3{
 .Blog_bix{
     width: 40rem;
     height: 5rem;
-    border: 1px solid black;
     margin: 1rem;
+    border: 1px solid ;
+    border-color: var(--text-color);
 }
 
 #Blogsdiv{
