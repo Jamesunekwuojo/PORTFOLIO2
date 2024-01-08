@@ -528,7 +528,7 @@ h3{
 }
 .boxtext{
     font-size: larger;
-    color: rgb(179, 179, 11);
+    color: var(darkpink);
 }
 #bloglink{
     text-decoration-line: none;
@@ -563,6 +563,7 @@ h3{
     right:-10vw;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    
 }
 
 .Projects_dropdown li {
