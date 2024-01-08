@@ -316,7 +316,7 @@ body.dark .home .text{
     flex-direction: row;
  
 }
-img{
+#myimage{
     border-radius: 50%;
 
 }
@@ -513,10 +513,25 @@ h3{
 
 .Blog_bix{
     width: 40rem;
-    height: 5rem;
+    height: 10rem;
     margin: 1rem;
     border: 1px solid ;
     border-color: var(--text-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.blogpics{
+    border-radius: 10px;
+}
+.boxtext{
+    font-size: larger;
+    color: rgb(179, 179, 11);
+}
+#bloglink{
+    text-decoration-line: none;
 }
 
 #Blogsdiv{
