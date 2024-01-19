@@ -11,10 +11,12 @@
     /* ===== Colors ===== */
     --body-color: #E4E9F7;
     --sidebar-color: #FFF;
-    --primary-color: #695CFE;
+    /* --primary-color: #695CFE; */
     --primary-color-light: #F6F5FF;
     --toggle-color: #DDD;
     --text-color: #707070;
+    --primary-color:#c93ac9;
+    --subHeading-colors:#c93ac9;
 
     /* ====== Transition ====== */
     --tran-03: all 0.2s ease;
@@ -41,6 +43,7 @@ body.dark{
     --primary-color-light: #3a3b3c;
     --toggle-color: #fff;
     --text-color: #ccc;
+    --subHeading-colors: #ccc;
 }
 
 /* ===== Sidebar ===== */
@@ -342,7 +345,7 @@ body.dark .home .text{
     position: absolute;
     width: 2rem;
     height: 2rem;
-    border: 6px solid rgb(135, 56, 209);
+    border: 6px solid #c93ac9;
     background-color: transparent;
 }
 
@@ -468,7 +471,7 @@ body.dark .home .text{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color:  rgb(135, 56, 209);
+    
     
 }
 #textdiv{
@@ -508,7 +511,7 @@ max-width: 50vw;
 }
 
 h3{
-     color:  rgb(135, 56, 209);
+    color: var(--subHeading-colors);
 }
 
 .Blog_bix{
@@ -528,7 +531,7 @@ h3{
 }
 .boxtext{
     font-size: larger;
-    color: var(darkpink);
+    color: var(--subHeading-colors);
 }
 #bloglink{
     text-decoration-line: none;
@@ -549,6 +552,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .dropdown:hover .Projects_dropdown {
@@ -573,13 +577,13 @@ h3{
 
 .Projects_dropdown li a {
     text-decoration: none;
-    color: #333;
+    color: #333; 
     display: block;
 }
 
-.Projects_dropdown li:hover {
+/* .Projects_dropdown li:hover {
     background-color: #f9f9f9;
-}
+} */
 
 
 
