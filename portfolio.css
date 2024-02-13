@@ -321,14 +321,15 @@ body.dark .home .text{
 }
 #myimage{
     border-radius: 50%;
+    width: 250px;
 
 }
-#Imgdiv{
+.Imgdiv{
    
     width: 250px; /* Set a fixed width */
-    position: sticky; /* Fix its position */
+    position: absolute; /* Fix its position */
     top: 50px; /* Adjust the top position as needed */
-    left: 65vw; /* Adjust the left position as needed */
+    left: 60vw; /* Adjust the left position as needed */
     z-index: 999; /* Set a higher z-index to ensure it's above other elements */
     
 }
@@ -522,7 +523,7 @@ h3{
 
 .Blog_bix{
     width: 40rem;
-    height: 10rem;
+    height: 5rem;
     margin: 1rem;
     border: 1px solid ;
     border-color: var(--text-color);
@@ -675,7 +676,7 @@ h3{
     }
     
     .sidebar .text{
-        font-size: 17px;
+        font-size: 14px;
         font-weight: 500;
         white-space: nowrap;
         opacity: 1;
@@ -691,7 +692,8 @@ h3{
     
     .sidebar header .image-text{
         display: flex;
-        align-items: center;
+        align-items:center;
+        
     }
     .sidebar header .logo-text{
         display: flex;
@@ -699,12 +701,13 @@ h3{
     }
     header .image-text .name {
         margin-top: 2px;
-        font-size: 18px;
+        margin-left: 0px;
+        font-size: 16px;
         font-weight: 600;
     }
     
     header .image-text .profession{
-        font-size: 16px;
+        font-size: 14px;
         margin-top: -2px;
         display: block;
     }
@@ -839,6 +842,7 @@ h3{
         align-items: center;
         justify-content: center;
         border-radius: 6px;
+
         cursor: pointer;
     }
     .toggle-switch .switch{
@@ -878,46 +882,53 @@ h3{
         transition: var(--tran-05);
     }
     .home .text{
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 500;
         color: var(--text-color);
-        padding: 12px 60px;
+        /* padding: 12px 60px; */
+       
     }
     
     .sidebar.close ~ .home{
-        left: 78px;
+        left: 88px;
         height: 100vh;
-        width: calc(100% - 78px);
+        width: calc(100% - 88px);
     }
     body.dark .home .text{
         color: var(--text-color);
     }
     
     #Homediv{
-        margin-left: 4rem;
+        margin-left: 0;
         color: var(--text-color);
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        
      
     }
     #myimage{
         border-radius: 50%;
+        width: 150px;
     
     }
-    #Imgdiv{
-       
-        width: 250px; /* Set a fixed width */
-        position: fixed; /* Fix its position */
-        top: 50px; /* Adjust the top position as needed */
-        left: 65vw; /* Adjust the left position as needed */
-        z-index: 999; /* Set a higher z-index to ensure it's above other elements */
+    .Imgdiv{
+        position:sticky;
+        display: flex;
+        flex-direction: column;
+        margin-right: 6rem;
+        margin-left: 0rem;
+        align-items: center;
+        width: 3vw;
+        margin-top: 10rem; 
+
         
     }
     
     #Bodytext{
-        font-size: 20px;
-        max-width: 40vw;
-        height: 250px;
+        font-size: 16px;
+        max-width: 60vw;
+        height: 40vh;
+        margin-left: 3vw;
         
     }
     
@@ -1052,6 +1063,8 @@ h3{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    
+        margin-top: 5rem;
         
         
     }
@@ -1068,6 +1081,7 @@ h3{
         align-items: center;
         margin-top: 2rem;
         flex-direction: column; 
+        margin-right: 5vw;
         
     }
     
@@ -1078,8 +1092,8 @@ h3{
     
     
     .Elementary_p, .Intermediate_p{
-        width: 25rem;
-        height: 400px;
+        width: 45vw;
+        height: 20vh;
         border: 1px solid ;
         border-color: var(--text-color);
         display: flex;
@@ -1092,7 +1106,7 @@ h3{
     #Elementary, #Intermediate{
         display: flex;
         flex-direction: column;
-        max-width: 70vw;
+        max-width: 40vw;
     
     
     }
@@ -1102,8 +1116,8 @@ h3{
     }
     
     .Blog_bix{
-        width: 40rem;
-        height: 10rem;
+        width: fit-content;
+        height: fit-content;
         margin: 1rem;
         border: 1px solid ;
         border-color: var(--text-color);
@@ -1117,8 +1131,10 @@ h3{
         border-radius: 10px;
     }
     .boxtext{
-        font-size: larger;
+        font-size: 12px;
+        font-weight: 500;
         color: var(--subHeading-colors);
+        
     }
     #bloglink{
         text-decoration-line: none;
@@ -1171,12 +1187,10 @@ h3{
     /* .Projects_dropdown li:hover {
         background-color: #f9f9f9;
     } */
-    
-    
-    
+
+   
     
     
     
 
 } 
-    
