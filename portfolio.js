@@ -46,3 +46,5 @@ function typeWriter() {
 }
 // setTimeout(re_type, 5000);
 typeWriter();
+
+
