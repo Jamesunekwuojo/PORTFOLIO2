@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/mainfavicon.png" type="image/png">
     
     <!----======== CSS ======== -->
     <link rel="stylesheet" href="portfolio.css">
@@ -12,7 +15,7 @@
     <!----===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     
-    <title>Jamesportfolio</title>
+    <title> 𝕵 𝖀𝖓𝖊𝖐𝖜𝖚𝖔𝖏𝖔'𝖘  𝖕𝖔𝖗𝖙𝖋𝖔𝖑𝖎𝖔</title>
 </head>
 <body>
     <!--SIDEBAR DIV-->
@@ -172,14 +175,21 @@
             <div id="textdiv"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis impedit ducimus magnam nam veniam provident delectus? Sequi neque unde repellat possimus porro, non, quam, magnam ipsum culpa quas consequatur quisquam.</p>
             </div>
         </div>
+        <!-- MAIN PROJECTS DIV -->
 
         <div id="Projectsdiv">
             <h3>Projects</h3>
 
             <div id="Elementary">
                 
-                <div class="Elementary_p"></div>
-                <div class="Elementary_p"></div>
+                <div class="Elementary_p" onmouseover="displaytxt()" onmouseout="hidetxt()">
+                    <img src="./edit 1.png" alt="">
+                    <!-- tooltip -->
+                    <div class="tooltip hide" ><p>A contact form built with HTML, CSS and JS</p></div>
+                </div>
+
+
+                <div class="Elementary_p"> <img src="./edit2.png" alt=""></div>
                 <div class="Elementary_p"></div>
 
             </div>
@@ -207,8 +217,9 @@
 
                     <!-- <img class="blogpics" width="200px" src="./Screenshot 2024-01-08 105555.png" alt=""> -->
 
-                    
+                
                 </a>
+
 
             </div>
             <div class="Blog_bix">

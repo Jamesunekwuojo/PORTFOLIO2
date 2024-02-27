@@ -491,14 +491,29 @@ max-width: 50vw;
     
 }
 
-.Elementary_p:hover{
+/* .Elementary_p:hover{
     background-color: var(--primary-color);
+} */
+
+.tooltip{
+    display: none;
+    position: relative;
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    transform: translateX(-50%);
+    
+    
+    
 }
-
-
+.tooltip.show{
+    display: block;
+}
 
 .Elementary_p, .Intermediate_p{
     width: 25rem;
+    position: relative;
     height: 400px;
     border: 1px solid ;
     border-color: var(--text-color);

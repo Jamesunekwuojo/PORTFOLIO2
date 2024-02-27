@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hover Display</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.hover-div {
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    display: none;
+}
+
+.tooltip.show {
+    display: block;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="hover-div" onmouseover="displayTxt()" onmouseout="hideTxt()">
+    Hover over me
+    <div class="tooltip hide">Displayed Text</div>
+</div>
+
+<script>
+    function displayTxt() {
+    const tooltip = document.querySelector('.tooltip');
+    tooltip.classList.add('show');
+}
+
+function hideTxt() {
+    const tooltip = document.querySelector('.tooltip');
+    tooltip.classList.remove('show');
+}
+
+</script>
+</body>
+</html>

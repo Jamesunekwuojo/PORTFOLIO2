@@ -48,3 +48,16 @@ function typeWriter() {
 typeWriter();
 
 
+// To diplay/hide inner project text when hovered
+
+
+
+function displaytxt(){
+  const tooltip = document.querySelector('.tooltip')
+  tooltip.classList.add('show')
+}
+
+function hidetxt (){
+  const tooltip = document.querySelector('.tooltip')
+  tooltip.classList.remove('show')
+}
