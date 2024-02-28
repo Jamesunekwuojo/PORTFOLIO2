@@ -498,11 +498,12 @@ max-width: 50vw;
 .tooltip{
     display: none;
     position: relative;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--body-color);
+    color: var(--subHeading-colors);
     padding: 8px;
     border-radius: 4px;
-    transform: translateX(-50%);
+
+    /* transform: translateX(-50%); */
     
     
     
@@ -512,13 +513,13 @@ max-width: 50vw;
 }
 
 .Elementary_p, .Intermediate_p{
-    width: 25rem;
+    width: 600px;
     position: relative;
-    height: 400px;
+    height: 250px;
     border: 1px solid ;
     border-color: var(--text-color);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 1rem;
     border-radius: 10px;
     transition: var(--primary-color) 0.9s ease;
