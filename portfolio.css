@@ -492,6 +492,7 @@ body.dark .home .text{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100vh;
     
     
 }
