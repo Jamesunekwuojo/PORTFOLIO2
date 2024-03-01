@@ -52,23 +52,16 @@ typeWriter();
 
 
 
-function displaytxt(){
-  const tooltip = document.querySelector('.tooltip')
+function displaytxt(divNumber){
+  // const tooltip = document.querySelector('.tooltip')
+  const tooltip = document.getElementById(`tooltip${divNumber}`);
   tooltip.classList.add('show')
 }
 
-function hidetxt (){
-  const tooltip = document.querySelector('.tooltip')
+function hidetxt (divNumber){
+  // const tooltip = document.querySelector('.tooltip')
+  const tooltip = document.getElementById(`tooltip${divNumber}`);
+
   tooltip.classList.remove('show')
 }
 
-// second tooltip
-function displaytxt1(){
-  const tooltip = document.querySelector('.tooltip1')
-  tooltip.classList.add('show1')
-}
-
-function hidetxt1(){
-  const tooltip = document.querySelector('.tooltip1')
-  tooltip.classList.remove('show1')
-}

@@ -181,18 +181,19 @@
             <h3>Projects</h3>
 
             <div id="Elementary">
-                
-                <div class="Elementary_p" onmouseover="displaytxt()" onmouseout="hidetxt()">
+                <!-- 1st Project div -->
+                <div class="Elementary_p" onmouseover="displaytxt(1)" onmouseout="hidetxt(1)">
                     <img src="./edt1.png" alt="" style="width: 100%; height: 300px; border-radius:5px ;">
                     <!-- 1st tooltip -->
-                    <div class="tooltip hide" ><p>A contact form built with HTML, CSS and JS</p></div>
+                    <div class="tooltip hide" id="tooltip1"><p>A contact form built with HTML, CSS and JS</p></div>
                 </div>
 
 
-                <div class="Elementary_p" onmouseover="displaytxt1()" onmouseout="hidetxt1()">
+                <!-- Second project div -->
+                <div class="Elementary_p" onmouseover="displaytxt(2)" onmouseout="hidetxt(2)" >
                     <img  src="./edt2.png" alt="" style="width: 100%; height: 300px; border-radius: 5px;">
                     <!-- 2nd tooltip -->
-                    <div class="tooltip1 hide" ><p>A QR generator  site built with HTML, CSS and JS</p></div>
+                    <div class="tooltip hide" id="tooltip2"><p>A QR generator  site built with HTML, CSS and JS</p></div>
 
               
 
@@ -200,6 +201,9 @@
 
                 <div class="Elementary_p">
                     <img src="./edit3.png" alt="" style="width: 100%; height: 300px; border-radius: 5px; margin: 0;">
+                    <div class="tooltip hide" id="tooltip3">
+                        <p>A weather app built from scratch with HTML, CSS and JS. With some integrations from Open weather  using their API keys.</p>
+                    </div>
                 </div>
 
             </div>

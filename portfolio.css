@@ -502,8 +502,8 @@ max-width: 50vw;
     color: var(--subHeading-colors);
     padding: 8px;
     border-radius: 4px;
-
-    /* transform: translateX(-50%); */
+/* 
+    transform: translateX(-50%);  */
     
     
     
@@ -512,20 +512,7 @@ max-width: 50vw;
     display: block;
 }
 
-.tooltip1{
-    display: none;
-    position: relative;
-    background-color: var(--body-color);
-    color: var(--subHeading-colors);
-    padding: 8px;
-    border-radius: 4px;
 
-    /* transform: translateX(-50%); */
-    
-}
-.tooltip.show1{
-    display: block;
-}
 
 .Elementary_p, .Intermediate_p{
     width: 600px;
