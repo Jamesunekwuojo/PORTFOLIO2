@@ -61,3 +61,14 @@ function hidetxt (){
   const tooltip = document.querySelector('.tooltip')
   tooltip.classList.remove('show')
 }
+
+// second tooltip
+function displaytxt1(){
+  const tooltip = document.querySelector('.tooltip1')
+  tooltip.classList.add('show1')
+}
+
+function hidetxt1(){
+  const tooltip = document.querySelector('.tooltip1')
+  tooltip.classList.remove('show1')
+}

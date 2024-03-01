@@ -491,9 +491,9 @@ max-width: 50vw;
     
 }
 
-/* .Elementary_p:hover{
-    background-color: var(--primary-color);
-} */
+ /* .Elementary_p:hover{
+    background-color: white;
+}  */
 
 .tooltip{
     display: none;
@@ -509,6 +509,21 @@ max-width: 50vw;
     
 }
 .tooltip.show{
+    display: block;
+}
+
+.tooltip1{
+    display: none;
+    position: relative;
+    background-color: var(--body-color);
+    color: var(--subHeading-colors);
+    padding: 8px;
+    border-radius: 4px;
+
+    /* transform: translateX(-50%); */
+    
+}
+.tooltip.show1{
     display: block;
 }
 
