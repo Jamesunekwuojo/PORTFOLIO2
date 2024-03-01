@@ -18,9 +18,9 @@ modeSwitch.addEventListener("click" , () =>{
     body.classList.toggle("dark");
     
     if(body.classList.contains("dark")){
-        modeText.innerText = "Dark mode";
-    }else{
         modeText.innerText = "Light-mode";
+    }else{
+        modeText.innerText = "Dark-mode";
         
     }
 });
@@ -53,13 +53,13 @@ typeWriter();
 
 
 function displaytxt(divNumber){
-  // const tooltip = document.querySelector('.tooltip')
+
   const tooltip = document.getElementById(`tooltip${divNumber}`);
   tooltip.classList.add('show')
 }
 
 function hidetxt (divNumber){
-  // const tooltip = document.querySelector('.tooltip')
+
   const tooltip = document.getElementById(`tooltip${divNumber}`);
 
   tooltip.classList.remove('show')
