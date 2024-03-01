@@ -26,6 +26,8 @@
     --toggle-color: #fff;
     --text-color: #ccc;
     --subHeading-colors: #ccc;
+    --footertext-color: #fff;
+
 
     /* ====== Transition ====== */
     --tran-03: all 0.2s ease;
@@ -64,6 +66,7 @@ body.dark{
     --text-color: #707070;
     --primary-color:#c93ac9;
     --subHeading-colors:#c93ac9;
+    --footertext-color: #fff;
 }
 
 /* ===== Sidebar ===== */
@@ -631,6 +634,21 @@ h3{
     background-color: #f9f9f9;
 } */
 
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 40vh;
+    border-radius: 5px;
+    
+}
+.mainsocials{
+    margin-top: 4%;
+    position: relative;
+    
+}
 
 
 
