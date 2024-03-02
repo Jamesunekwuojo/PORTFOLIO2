@@ -50,8 +50,6 @@ typeWriter();
 
 // To diplay/hide inner project text when hovered
 
-
-
 function displaytxt(divNumber){
 
   const tooltip = document.getElementById(`tooltip${divNumber}`);
