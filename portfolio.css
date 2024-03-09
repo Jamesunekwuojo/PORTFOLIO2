@@ -653,9 +653,16 @@ h3{
     
 }
 .highlight{
-    background-color:yellow;
+    background-color:purple;
     font-weight: bold;
     padding: 0 2px;
+}
+#resumeDiv{
+    height: 90vh;
+    margin: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
