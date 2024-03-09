@@ -652,6 +652,11 @@ h3{
     position: relative;
     
 }
+.highlight{
+    background-color:yellow;
+    font-weight: bold;
+    padding: 0 2px;
+}
 
 
 
@@ -1132,7 +1137,7 @@ h3{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-top: 7rem;
+        margin-top: 8rem;
         height: 100vh;
         
     }

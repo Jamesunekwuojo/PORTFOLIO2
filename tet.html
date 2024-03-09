@@ -3,71 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tooltip Example</title>
+    <title>Search Bar with Highlighting</title>
+    
     <style>
-    .parentDiv {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-    }
-
-.tooltipDiv {
-    position: relative;
-    cursor: pointer;
+    .container {
+    text-align: center;
+    margin: 50px auto;
 }
 
-.tooltip {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    color: #fff;
-    padding: 8px;
-    border-radius: 4px;
-    transform: translateX(-50%);
+#search-bar {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 300px;
 }
 
-.tooltip.show {
-    display: block;
+#text-content {
+    margin-top: 20px;
+    line-height: 1.5;
 }
 
-        
+.highlight {
+    background-color: yellow;
+    padding: 0 2px;
+}
+
+
 </style>
 </head>
 <body>
-
-<div class="parentDiv">
-    <div class="tooltipDiv" onmouseover="displayTooltip(1)" onmouseout="hideTooltip(1)">
-        <p>Div 1</p>
-        <div class="tooltip" id="tooltip1">Tooltip for Div 1</div>
+    <div class="container">
+        <h1>Search Text</h1>
+        <input type="text" id="search-bar" placeholder="Enter keyword...">
+        <p id="text-content">This is a sample text with content to be searched. You can search for keywords present in this paragraph.</p>
     </div>
+    <script src="script.js"></script>
+    <script>
+        const searchBar = document.getElementById('search-bar');
+const textContent = document.getElementById('text-content');
 
-    <div class="tooltipDiv" onmouseover="displayTooltip(2)" onmouseout="hideTooltip(2)">
-        <p>Div 2</p>
-        <div class="tooltip" id="tooltip2">Tooltip for Div 2</div>
-    </div>
+searchBar.addEventListener('keyup', (event) => {
+  const searchTerm = event.target.value.toLowerCase();
+  const text = textContent.textContent.toLowerCase();
 
-    <div class="tooltipDiv" onmouseover="displayTooltip(3)" onmouseout="hideTooltip(3)">
-        <p>Div 3</p>
-        <div class="tooltip" id="tooltip3">Tooltip for Div 3</div>
-    </div>
+  textContent.innerHTML = text.replace(
+    new RegExp(searchTerm, 'g'),
+    `<span class="highlight">$&</span>`
+  );
 
-    <div class="tooltipDiv" onmouseover="displayTooltip(4)" onmouseout="hideTooltip(4)">
-        <p>Div 4</p>
-        <div class="tooltip" id="tooltip4">Tooltip for Div 4</div>
-    </div>
-</div>
+  if (!searchTerm) {
+    textContent.innerHTML = textContent.textContent; // Remove highlight on empty search
+  }
+});
 
-<script>
-    function displayTooltip(divNumber) {
-    const tooltip = document.getElementById(`tooltip${divNumber}`);
-    tooltip.classList.add('show');
-}
-
-function hideTooltip(divNumber) {
-    const tooltip = document.getElementById(`tooltip${divNumber}`);
-    tooltip.classList.remove('show');
-}
-
-</script>
+    </script>
 </body>
 </html>

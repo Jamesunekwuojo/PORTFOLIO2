@@ -63,3 +63,21 @@ function hidetxt (divNumber){
   tooltip.classList.remove('show')
 }
 
+
+//To enable search feature
+const searchBar = document.getElementById('search-bar');
+const textContent = document.getElementById('text-content');
+
+searchBar.addEventListener('keyup', (event) => {
+  const searchTerm = event.target.value.toLowerCase();
+  const text = textContent.textContent.toLowerCase();
+
+  textContent.innerHTML = text.replace(
+    new RegExp(searchTerm, 'g'),
+    `<span class="highlight">$&</span>`
+  );
+
+  if (!searchTerm) {
+    textContent.innerHTML = textContent.textContent; // Remove highlight on empty search
+  }
+});
