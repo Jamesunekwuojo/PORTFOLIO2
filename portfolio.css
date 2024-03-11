@@ -659,11 +659,17 @@ h3{
 }
 #resumeDiv{
     height: 90vh;
-    margin: 4rem;
+    width: 80vw;
+    margin: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+#resumeimage{
+    width:80%;
+    
+}
+
 
 
 
@@ -1203,8 +1209,8 @@ h3{
     }
     
     .Blog_bix{
-        width: fit-content;
-        height: fit-content;
+        width: 70vw;
+        height: 10vh;
         margin: 1rem;
         border: 1px solid ;
         border-color: var(--text-color);
@@ -1218,7 +1224,7 @@ h3{
         border-radius: 10px;
     }
     .boxtext{
-        font-size: 12px;
+        font-size: 15px;
         font-weight: 500;
         color: var(--subHeading-colors);
         
@@ -1270,9 +1276,24 @@ h3{
         color: #333; 
         display: block;
     }
+
+    #resumeDiv{
+        height: 90vh;
+        width: 80vw;
+        margin: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #resumeimage{
+        width:476px;
+        
+    }
     
     
 }
+
+
 
 
 
@@ -1887,6 +1908,19 @@ h3{
         text-decoration: none;
         color: #333; 
         display: block;
+    }
+
+    #resumeDiv{
+        height: 90vh;
+        width: 80vw;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #resumeimage{
+        width:60vw;
+        
     }
     
     /* .Projects_dropdown li:hover {

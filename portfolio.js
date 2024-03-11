@@ -81,3 +81,23 @@ searchBar.addEventListener('keyup', (event) => {
     textContent.innerHTML = textContent.textContent; // Remove highlight on empty search
   }
 });
+
+
+// Contact form integration
+
+
+function sendEmail(){
+
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "godswillemmanueljames@gmail.com",
+    Password : "2C09C26AA60D69056638038EA8EB5C5EE36C",
+    To : 'godswillemmanueljames@gmail.com',
+    From : "godswillemmanueljames@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+  }).then(
+  message => alert(message)
+  )
+
+}
