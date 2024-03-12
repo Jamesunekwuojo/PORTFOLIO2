@@ -673,6 +673,15 @@ h3{
 #containerContact_Div{
     display: flex;
     flex-direction: row;
+    margin-bottom: 10%;
+   
+  
+}
+#ContactMe-text{
+    display: flex;
+    margin-left: 35%;
+    margin-top: 10%;
+    margin-bottom: 10px;
 }
 
 
@@ -681,7 +690,8 @@ h3{
     height: 400px;
     display: flex;
     align-items: center;
-    margin: 10%;
+    margin-left:10%;
+    margin-right:10%;
     padding: 10px;
     flex-direction: column;
     border: 1px solid var(--footertext-color);
@@ -727,7 +737,7 @@ h3{
 .formContact_Div{
     display: flex;
     align-items: center;
-    margin-top:10%;
+    /* margin-top:10%; */
     flex-direction: column;
     width: 350px;
     height: 400px;
