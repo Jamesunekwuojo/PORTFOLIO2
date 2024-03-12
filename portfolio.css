@@ -689,7 +689,7 @@ h3{
 .callIcon{
     border: 1px solid white;
     padding: 10px;
-    border-radius: 50px;
+    border-radius: 50%;
     margin: 5px;
 }
 .locationIcon_main{
@@ -700,10 +700,24 @@ h3{
 .locationIcon{
     border: 1px solid white;
     padding: 10px;
-    border-radius: 50px;
+    border-radius: 50%;
     margin: 5px;
 
 }
+.emailIcon_main{
+    display: flex;
+    flex-direction: row;
+    margin-top:20px;
+}
+.emailIcon{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 10px;
+
+}
+
+
 
 
 
