@@ -671,8 +671,8 @@ h3{
 }
 
 .contactDiv{
-    width: 300px;
-    height: 500px;
+    width: 350px;
+    height: 400px;
     display: flex;
     align-items: center;
     margin: 10%;
@@ -680,7 +680,7 @@ h3{
     flex-direction: column;
     border: 1px solid var(--footertext-color);
     background-color: #c93ac9;
-    border-radius: ;
+    border-radius: 10px ;
 }
 .callIcon_main{
     display: flex;
@@ -689,9 +689,22 @@ h3{
 .callIcon{
     border: 1px solid white;
     padding: 10px;
-    border-radius: 100%;
+    border-radius: 50px;
     margin: 5px;
 }
+.locationIcon_main{
+    display: flex;
+    flex-direction: row;
+    margin-top:20px;
+}
+.locationIcon{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 5px;
+
+}
+
 
 
 
