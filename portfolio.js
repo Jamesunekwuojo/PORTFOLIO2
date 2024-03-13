@@ -85,7 +85,7 @@ searchBar.addEventListener('keyup', (event) => {
 
 // Contact form integration
 
-const form 
+const form = document.querySelector('form')
 function sendEmail(){
 
   Email.send({
@@ -101,4 +101,10 @@ function sendEmail(){
   )
 
 }
+
+form.addEventListener('submit', (e)=>{ 
+  e.preventDefault();
+  sendEmail();
+
+})
 
