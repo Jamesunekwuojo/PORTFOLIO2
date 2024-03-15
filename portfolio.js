@@ -6,6 +6,7 @@ const body = document.querySelector('body'),
       modeText = body.querySelector(".mode-text");
 
 
+
 toggle.addEventListener("click" , () =>{
     sidebar.classList.toggle("close");
 })
@@ -85,8 +86,17 @@ searchBar.addEventListener('keyup', (event) => {
 
 // Contact form integration
 
-const form = document.querySelector('form')
+const form = document.querySelector('form');
+const fullname = document.getElementById('inputEmail1');
+const email = document.getElementById('inputEmail2');
+const phone = document.getElementById('inputEmail3');
+const subject = document.getElementById('inputEmail4');
+const message = document.getElementById('messageBox');
+
 function sendEmail(){
+
+  const bodymessage = `full Name: ${fullname.value} <br> Email: ${email.value} <br> ${phone.value} <br> Message: ${message.value}`
+
 
   Email.send({
     Host : "smtp.elasticemail.com",
@@ -94,13 +104,24 @@ function sendEmail(){
     Password : "2C09C26AA60D69056638038EA8EB5C5EE36C",
     To : 'godswillemmanueljames@gmail.com',
     From : "godswillemmanueljames@gmail.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
+    Subject : subject.value,
+    Body : bodymessage
   }).then(
-  message => alert(message)
+  message => {
+
+    if (message == 'OK'){
+      Swal.fire({
+        title: "Success!",
+        text: "Message Sent Successful!",
+        icon: "success"
+      });
+    }
+
+  } 
   )
 
 }
+
 
 form.addEventListener('submit', (e)=>{ 
   e.preventDefault();
