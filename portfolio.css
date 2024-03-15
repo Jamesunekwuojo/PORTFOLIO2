@@ -657,7 +657,7 @@ h3{
     font-weight: bold;
     padding: 0 2px;
 }
-#resumeDiv{
+/* #resumeDiv{
     height: 90vh;
     width: 80vw;
     margin: 2rem;
@@ -668,7 +668,7 @@ h3{
 #resumeimage{
     width:80%;
     
-}
+} */
 
 #containerContact_Div{
     display: flex;
@@ -677,6 +677,7 @@ h3{
    
   
 }
+
 #ContactMe-text{
     display: flex;
     margin-left: 35%;
@@ -761,6 +762,11 @@ h3{
     padding: 15px;
     align-items: normal;
 
+}
+
+
+#button{
+    margin-left: 35%
 }
 
 
@@ -1279,7 +1285,7 @@ h3{
     
 
 .Elementary_p, .Intermediate_p{
-    width: 60vw;
+    width: 300px;
     position: relative;
     height: 400px;
     border: 1px solid ;
@@ -1375,18 +1381,50 @@ h3{
         display: block;
     }
 
-    #resumeDiv{
-        height: 90vh;
-        width: 80vw;
-        margin: 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #resumeimage{
-        width:476px;
-        
-    }
+    
+#containerContact_Div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+   
+  
+}
+
+
+.formContact_Div{
+    display: flex;
+    align-items: center;
+    margin-left:5%;
+    margin-top: 10%; 
+    flex-direction: column;
+    width: 340px;
+    height: 400px;
+    /* border: 1px solid var(--footertext-color);  */
+}
+
+.contactDiv{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    margin-left:5%;
+    /* margin-right:10%; */
+    padding: 10px;
+    flex-direction: column;
+    border: 1px solid var(--footertext-color);
+    background-color: #c93ac9;
+    border-radius: 10px ;
+}
+
+#button{
+    margin-left: 35%
+}
+
+.inputBox{
+    position: relative;
+    width: 300px;
+}
+  
     
     
 }
@@ -2025,8 +2063,76 @@ h3{
         background-color: #f9f9f9;
     } */
 
+   .contactDiv{
+    width: 240px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    margin-left:10%;
+    /* margin-right:10%; */
+    padding: 10px;
+    flex-direction: column;
+    border: 1px solid var(--footertext-color);
+    background-color: #c93ac9;
+    border-radius: 10px ;
+}
+
+#ContactMe-text{
+    margin-left: 17%;
+}
+
+.formContact_Div{
+    width: 240px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    margin-left:10%;
+    margin-top: 10%;  
+    flex-direction: column;
+ 
+    /* border: 1px solid var(--footertext-color);  */
+}
+
+.inputbox{
+   position: relative;
+   width: 240px;
    
-    
+}
+#messageBox{
+    width: 240px;
+
+}
+#inputEmail1{
+    width: 115px;
+   
+}
+
+#inputEmail2{
+    width: 115px;
+   
+
+}
+
+#inputEmail3{
+    width:115px ;
+}
+
+#inputEmail4{
+    width: 115px;
+
+}
+
+#button {
+    margin-left: 20%;
+}
+
+
+
+
+/* .emailIcon_text{
+    padding-right: 5px;
+    overflow-wrap: normal;
+} */
     
     
 
