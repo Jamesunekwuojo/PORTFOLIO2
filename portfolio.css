@@ -669,6 +669,9 @@ h3{
     width:80%;
     
 } */
+#contactWrapper_Div{
+    height: 100vh;
+}
 
 #containerContact_Div{
     display: flex;
@@ -691,7 +694,7 @@ h3{
     height: 350px;
     display: flex;
     align-items: center;
-    margin-left:10%;
+    margin-left:5%;
     margin-right:10%;
     padding: 10px;
     flex-direction: column;
@@ -761,13 +764,33 @@ h3{
     border-radius: 5px; 
     padding: 15px;
     align-items: normal;
+    
 
 }
 
 
 #button{
-    margin-left: 35%
+    margin-left: 32%
 }
+#messageBox{
+    width: 350px;
+    margin-right: 5px;
+}
+#inputEmail1{
+    width: 170px;
+}
+
+#inputEmail2{
+    width: 170px;
+}
+
+#inputEmail3{
+    width: 170px;
+}
+#inputEmail4{
+    width: 170px;
+}
+
 
 
 
@@ -1394,7 +1417,7 @@ h3{
 .formContact_Div{
     display: flex;
     align-items: center;
-    margin-left:5%;
+    margin-left:20%;
     margin-top: 10%; 
     flex-direction: column;
     width: 340px;
@@ -1407,7 +1430,7 @@ h3{
     height: 350px;
     display: flex;
     align-items: center;
-    margin-left:5%;
+    margin-left:20%;
     /* margin-right:10%; */
     padding: 10px;
     flex-direction: column;
@@ -1422,7 +1445,11 @@ h3{
 
 .inputBox{
     position: relative;
-    width: 300px;
+    
+}
+
+#contactWrapper_Div{
+    height: auto;
 }
   
     
@@ -2126,6 +2153,9 @@ h3{
     margin-left: 20%;
 }
 
+#contactWrapper_Div{
+    height: auto;
+}
 
 
 
