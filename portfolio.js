@@ -67,7 +67,7 @@ function hidetxt (divNumber){
 
 //To enable search feature
 const searchBar = document.getElementById('search-bar');
-const textContent = document.getElementById('text-content');
+const textContent = document.getElementById('textdiv');
 
 searchBar.addEventListener('keyup', (event) => {
   const searchTerm = event.target.value.toLowerCase();
